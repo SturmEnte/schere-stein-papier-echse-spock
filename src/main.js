@@ -5,6 +5,9 @@ document.getElementById("papier").addEventListener("click", () => play(2));
 document.getElementById("echse").addEventListener("click", () => play(3));
 document.getElementById("spock").addEventListener("click", () => play(4));
 
+const GAME_SCREEN = document.getElementById("game-screen");
+const END_SCREEN = document.getElementById("end-screen");
+
 const RESULT_TEXT = ["Unentschieden", "Du hast verloren", "Du hast gewonnen"];
 
 function play(choice) {
@@ -102,4 +105,12 @@ function play(choice) {
 			}
 			break;
 	}
+
+	GAME_SCREEN.style.display = "none";
+	END_SCREEN.style.display = "block";
 }
+
+document.getElementById("play-again").addEventListener("click", () => {
+	GAME_SCREEN.style.display = "block";
+	END_SCREEN.style.display = "none";
+});
