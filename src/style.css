@@ -26,6 +26,7 @@ body {
 
 .title {
 	font-size: 55px;
+	margin-bottom: 15px;
 }
 
 button {
@@ -35,4 +36,9 @@ button {
 	border: 0;
 	color: var(--font-color);
 	padding: 10px;
+}
+
+.buttons button {
+	margin-left: 5px;
+	margin-right: 5px;
 }
