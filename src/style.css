@@ -1,5 +1,6 @@
 :root {
 	--background-prim: rgb(43, 43, 43);
+	--accent: rgb(212, 0, 255);
 	--font-color: white;
 }
 
@@ -24,4 +25,14 @@ body {
 }
 
 .title {
+	font-size: 55px;
+}
+
+button {
+	font-size: 28px;
+	background: var(--accent);
+	border-radius: 200px;
+	border: 0;
+	color: var(--font-color);
+	padding: 10px;
 }
