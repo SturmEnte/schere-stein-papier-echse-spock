@@ -107,10 +107,10 @@ function play(choice) {
 	}
 
 	GAME_SCREEN.style.display = "none";
-	END_SCREEN.style.display = "block";
+	END_SCREEN.style.display = "flex";
 }
 
 document.getElementById("play-again").addEventListener("click", () => {
-	GAME_SCREEN.style.display = "block";
+	GAME_SCREEN.style.display = "flex";
 	END_SCREEN.style.display = "none";
 });

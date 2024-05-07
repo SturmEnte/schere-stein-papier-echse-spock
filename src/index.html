@@ -5,24 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Schere Stein Papier Echse Spock</title>
 		<script src="main.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="game-screen" style="display: block">
-				<div class="titel">Was wählst du?</div>
-				<div class="buttons">
-					<button id="schere">Schere</button>
-					<button id="stein">Stein</button>
-					<button id="papier">Papier</button>
-					<button id="echse">Echse</button>
-					<button id="spock">Spock</button>
-				</div>
+		<div id="game-screen" class="screen" display: block">
+			<div class="titel">Was wählst du?</div>
+			<div class="buttons">
+				<button id="schere">Schere</button>
+				<button id="stein">Stein</button>
+				<button id="papier">Papier</button>
+				<button id="echse">Echse</button>
+				<button id="spock">Spock</button>
 			</div>
+		</div>
 
-			<div id="end-screen" style="display: none">
-				<div class="titel"><span id="reason"></span>. <span id="result"></span></div>
-				<button id="play-again">Nochmal spielen</button>
-			</div>
+		<div id="end-screen" class="screen" style="display: none">
+			<div class="titel"><span id="reason"></span>. <span id="result"></span></div>
+			<button id="play-again">Nochmal spielen</button>
 		</div>
 	</body>
 </html>
